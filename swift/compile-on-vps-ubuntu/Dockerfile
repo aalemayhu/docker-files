@@ -9,7 +9,7 @@ libpython-dev libncurses5-dev pkg-config -y
 
 # Source code
 RUN git clone https://github.com/apple/swift
-#TODO: get ninja
+RUN git clone https://github.com/ninja-build/ninja.git
 RUN cd swift && utils/update-checkout --clone
 
 RUN time utils/build-script -t
